@@ -3,9 +3,11 @@
 <br> <input type="text" [(ngModel)]="title">
 <button (click)="addItem()">Add Item</button>
 <br> {{title}}
+<hr>
 <div *ngIf="title === 'Div'">
     <h2>Div</h2>
 </div>
+<hr>
 <ol>
   <li  *ngIf="items.length === 0">La lista está vacía</li>
   <li *ngFor="let name of items;index as i"> 
@@ -13,6 +15,16 @@
     <button (click)="deleteItem(i)">delete</button>
   </li>
 </ol>
+<hr>
+<h4>Prueba Switch</h4>
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'uno'">Uno</p>
+  <p *ngSwitchCase="'dos'">Dos</p>
+  <p *ngSwitchCase="'tres'">Tres</p>
+  <p *ngSwitchDefault>Default</p>
+</div>
+
+<hr>
 
 <div *ngFor="let product of products">
   {{ product.title}}
