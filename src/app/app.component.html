@@ -1,5 +1,10 @@
 <h1>Hello World!!!</h1>
 <br> {{1 +  1}}
+<hr>
+<h3>Pipes Personalizado</h3>
+<input type="text" [(ngModel)]="power">
+{{power | exponential}}
+<hr>
 <br> <input type="text" [(ngModel)]="title">
 <button (click)="addItem()">Add Item</button>
 <br> {{title}}

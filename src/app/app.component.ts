@@ -9,6 +9,7 @@ import { Product} from './product.model'
 })
 export class AppComponent {
   title = 'dogue-store';
+  power:number = 10;
 
   items = ['shirt', 'coat', 'pants', 'shoes'];
 
