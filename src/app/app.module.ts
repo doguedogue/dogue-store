@@ -11,14 +11,16 @@ registerLocaleData(localeEs);
 
 import { ProductComponent } from './components/product.component';
 import { CartComponent } from './cart/cart.component';
-import { ExponentialPipe } from './exponential.pipe'
+import { ExponentialPipe } from './exponential.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     CartComponent,
-    ExponentialPipe
+    ExponentialPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
