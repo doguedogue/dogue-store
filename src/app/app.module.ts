@@ -12,7 +12,11 @@ registerLocaleData(localeEs);
 import { ProductComponent } from './components/product.component';
 import { CartComponent } from './cart/cart.component';
 import { ExponentialPipe } from './exponential.pipe';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
+import { DemoComponent } from './demo/demo.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { HighlightDirective } from './highlight.directive'
     ProductComponent,
     CartComponent,
     ExponentialPipe,
-    HighlightDirective
+    HighlightDirective,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
