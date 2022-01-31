@@ -24,20 +24,16 @@ const routes: Routes = [
         loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
       },
       {
-        path: 'products/:id',
-        loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
+        path: 'contact',
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
       {
-        path: 'contact',
+        path: 'demo',
         canActivate: [AdminGuard],
-        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
-      }
+        loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
+     }
     ]
   },  
-  {
-     path: 'demo',
-     loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
-  },
   {
     path: '**',
     component: PageNotFoundComponent
