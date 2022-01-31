@@ -3,7 +3,6 @@ import { RouterModule, Routes , PreloadAllModules} from '@angular/router';
 
 import { ProductsComponent} from './products/products.component'
 import { ContactComponent} from './contact/contact.component'
-import { DemoComponent} from './demo/demo.component'
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import { ProductDetailComponent} from './product-detail/product-detail.component'
 import { LayoutComponent } from './layout/layout.component'
@@ -37,8 +36,8 @@ const routes: Routes = [
     ]
   },  
   {
-    path: 'demo',
-    component: DemoComponent
+     path: 'demo',
+     loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
   },
   {
     path: '**',

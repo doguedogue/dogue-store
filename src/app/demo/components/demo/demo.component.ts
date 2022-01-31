@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
   title = 'dogue-store';
-  power:number = 10;
+  power = 10;
 
   items = ['shirt', 'coat', 'pants', 'shoes'];
   constructor() { }
