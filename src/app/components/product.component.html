@@ -5,3 +5,4 @@
 <p>{{today | date:'EEEE d/MMMM/yyyy'}}</p>
 <p>{{today | date:'h:mm a z'}}</p>
 <button (click)="addCart()">Agregar al carrito</button>
+<a [routerLink]="['/products', product.id]">Ver detalle</a>
