@@ -50,4 +50,5 @@ export class ProductComponent implements OnInit, OnChanges, DoCheck, OnDestroy{
         console.log('añadir al carrito');
         this.productClicked.emit(this.product.id);
     }
+
 }
