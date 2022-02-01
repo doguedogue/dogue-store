@@ -5,4 +5,10 @@ nav  > a {
 
 nav  > a.active {
     background-color: lightgray;
+    color: black;
+    text-decoration: underline;
+}
+
+.header-row {
+    width: 100%;
 }
